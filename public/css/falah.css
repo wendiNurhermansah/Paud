@@ -1,0 +1,190 @@
+html {
+	scroll-behavior: smooth;
+}
+/*navbar*/
+.navbar-brand {
+	font-family: 'Permanent Marker', cursive;
+	color: white !important;
+	padding: 5px;
+	text-shadow: 0 0 3px black;
+}
+
+
+
+.jumbotron {
+	background-image: url('../img/gedung2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 680px;
+}
+
+.jumbotron .display-4 {
+	text-align: center;
+	font-family: 'Permanent Marker', cursive;
+	color: #40E0D0;
+	margin-top: 300px;
+	text-shadow: 0 0 3px #FF0000;
+}
+
+.isi {
+	text-align: center;
+	color: navy;
+	text-align: bold;
+	font-family: 'Permanent Marker', cursive;
+
+}
+
+.ris {
+	margin-top: 50px;
+}
+
+.more-btn {
+	margin-top: 30px;
+}
+
+.gray{
+	background-color: #E6E6FA;
+	margin-top: 30px;
+}
+
+.card1 {
+	background-color: yellow;
+}
+
+.card2 {
+	background-color: #f00000;
+}
+
+.card3 {
+	background-color: orange;
+}
+
+.card4 {
+	background-color: green;
+}
+
+.han {
+	margin-top: 60px;
+
+}
+
+.test {
+          background-color: #191970;
+        }
+
+.isi2 {
+	text-align: center;
+	color: navy;
+	padding-top: 20px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.asu {
+	text-align: center;
+	color: navy;
+	padding-top: 30px;
+	font-family: 'Permanent Marker', cursive;
+}
+
+.perpect{
+	margin-top: 60px;
+}
+
+.bg-cover{
+	height: 300px;
+	width: 100%;
+	
+	padding: 0;
+}
+
+.info{
+	padding: 0px;
+
+}
+
+.alumni{
+	margin-top: 50px;
+	text-align: center;
+	color: navy;
+	font-family: 'Permanent Marker', cursive;
+	background-color: #E6E6FA;
+}
+
+.alumni .h2{
+	padding-top: 30px;
+}
+
+.cardd{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contak{
+	background-color: #333333;
+	border-top: 5px solid yellow;
+
+}
+
+.kontak{
+	text-align: center;
+	color: navy;
+	padding-top: 30px;
+	font-family: 'Permanent Marker', cursive;
+
+}
+.rows{
+	padding: 0px;
+	margin-top: 30px;
+	padding-bottom: 50px;
+	color: #E6E6FA;
+	
+}
+
+.footer{
+	text-align: center;
+	color: white !important;
+	background-color: #191970; 
+	height: 50px;
+	border-top: 5px solid yellow;
+
+}
+
+.footer h6{
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.away{
+	padding: 0px;
+}
+.nav-link:hover{
+	background-color: #0c0c01;
+}
+
+
+/*tampil di desktop*/
+
+@media (min-width: 992px) {
+	.nav-link {
+		text-transform: uppercase;
+		color: white !important;
+		text-shadow: 2px rgba(0, 0, 0, 0.7);
+	
+	}
+	
+	.jumbotron {
+		margin-top: -85px;
+	}
+
+	.han {
+		padding-bottom: 20px;
+	}
+}
+
+/*tampil di handphone*/
+
+@media (min-width: 576px) {
+	.han .card1 {
+		padding-bottom: 20px;
+	}
+}
