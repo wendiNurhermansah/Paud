@@ -12,17 +12,17 @@
       <div class="collapse navbar-collapse " id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{ url('/') }}">Beranda <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Profile Sekolah
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Sejarah</a>
-              <a class="dropdown-item" href="#">Sambutan kepala Sekolah</a>
-              <a class="dropdown-item" href="#">Visi & Misi</a>
-              <a class="dropdown-item" href="#">Tenaga Pendidik</a>
+              <a class="dropdown-item" href="{{ url('/sejarah') }}">Sejarah</a>
+              <a class="dropdown-item" href="{{ url('/sambutan') }}">Sambutan kepala Sekolah</a>
+              <a class="dropdown-item" href="{{ url('/visi&misi') }}">Visi & Misi</a>
+              <a class="dropdown-item" href="{{ url('/dataguru') }}">Tenaga Pendidik</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -30,8 +30,8 @@
               Berita
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Berita terbaru</a>
-              <a class="dropdown-item" href="#">Info Sekolah</a>
+              <a class="dropdown-item" href="{{ url('/beritaPopular')}}">Berita</a>
+              <a class="dropdown-item" href="{{ url('/infosekolah')}}">Info Sekolah</a>
               <a class="dropdown-item" href="#">Agenda</a>
               <a class="dropdown-item" href="#">Gallery</a>
             </div>

@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.main');
-});
+Route::get('/', 'MiftahulController@home');
+Route::get('/sejarah', 'MiftahulController@sejarah');
+Route::get('/sambutan', 'MiftahulController@sambutan');
+Route::get('/visi&misi', 'MiftahulController@visi');
+Route::get('/dataguru', 'MiftahulController@guru');
+Route::get('/beritaPopular', 'MiftahulController@berita');
+Route::get('/infosekolah', 'MiftahulController@info');
