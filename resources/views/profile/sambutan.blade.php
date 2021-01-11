@@ -7,7 +7,7 @@
      
 <div class="top">              
      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" style="padding: 50px;">
+        <ol class="breadcrumb bg-info" style="padding: 50px;">
         </ol>
     </nav>
 </div>

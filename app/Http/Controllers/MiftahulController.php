@@ -33,4 +33,8 @@ class MiftahulController extends Controller
     public function info(){
         return view('berita.infosekolah');
     }
+
+    public function gallery(){
+        return view('berita.gallery');
+    }
 }

@@ -32,8 +32,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="{{ url('/beritaPopular')}}">Berita</a>
               <a class="dropdown-item" href="{{ url('/infosekolah')}}">Info Sekolah</a>
-              <a class="dropdown-item" href="#">Agenda</a>
-              <a class="dropdown-item" href="#">Gallery</a>
+              <a class="dropdown-item" href="{{ url('/gallery')}}">Gallery</a>
             </div>
           </li>
           <li class="nav-item">
@@ -43,7 +42,7 @@
             <a class="nav-link" href="#prestasi">Prestasi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#alumni">Profil Alumni</a>
+            <a class="nav-link" href="#alumni">Profil Siswa</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#kontak">Kontak</a>

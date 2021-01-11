@@ -18,3 +18,4 @@ Route::get('/visi&misi', 'MiftahulController@visi');
 Route::get('/dataguru', 'MiftahulController@guru');
 Route::get('/beritaPopular', 'MiftahulController@berita');
 Route::get('/infosekolah', 'MiftahulController@info');
+Route::get('/gallery', 'MiftahulController@gallery');

@@ -64,7 +64,7 @@
   </div>
   
   <div class="more-btn col-md-12 text-center">
-    <a href="#" class="btn btn-primary border btn-md">Tampilkan Semua Berita</a>
+    <a href="{{ url('/beritaPopular') }}" class="btn btn-primary border btn-md">Tampilkan Semua Berita</a>
   </div>  
 </div>
 <!-- akhir berita -->
@@ -172,13 +172,16 @@
 
 <!-- akhir prestasi -->
 
-<!-- profil alumni -->
+<!-- profil Siswa -->
 
 <div id="alumni" class="alumni">
 <div class="container">
   <div class="h2">
-    <h2>Profil Alumni</h2>
+    <h2>Profil Siswa</h2>
   </div>
+  <div class="more-btn col-md-12 text-center">
+    <a href="" class="btn btn-primary border btn-md">Tampilkan Semua Siswa</a>
+  </div> 
 
   <div class="owl-carousel owl-theme">
     <div class="item">
@@ -289,7 +292,7 @@
         </div>
       </div>
     </div>
-  
+   
 </div>
   
 </div>

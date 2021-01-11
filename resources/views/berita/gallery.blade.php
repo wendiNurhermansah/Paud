@@ -14,7 +14,7 @@
 <div>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page" style="margin-left: 30px;"><b>INFO SEKOLAH / FASILITAS / DLL</b> </li>
+          <li class="breadcrumb-item active" aria-current="page" style="margin-left: 30px;"><b>GALLERY</b> </li>
         </ol>
       </nav>
 </div>
