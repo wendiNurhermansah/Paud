@@ -47,6 +47,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#kontak">Kontak</a>
           </li>
+          <li class="nav-item">
+            <a href="#" class="btn btn-success nav-link" data-target="#produk1" data-toggle="modal">Daftar</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -12,10 +12,11 @@
 */
 
 Route::get('/', 'MiftahulController@home');
-Route::get('/sejarah', 'MiftahulController@sejarah');
-Route::get('/sambutan', 'MiftahulController@sambutan');
-Route::get('/visi&misi', 'MiftahulController@visi');
-Route::get('/dataguru', 'MiftahulController@guru');
-Route::get('/beritaPopular', 'MiftahulController@berita');
-Route::get('/infosekolah', 'MiftahulController@info');
-Route::get('/gallery', 'MiftahulController@gallery');
+Route::get('/sejarah', 'ProfileController@sejarah');
+Route::get('/sambutan', 'ProfileController@sambutan');
+Route::get('/visi&misi', 'ProfileController@visi');
+Route::get('/dataguru', 'ProfileController@guru');
+
+Route::get('/beritaPopular', 'BeritaController@berita');
+Route::get('/infosekolah', 'BeritaController@info');
+Route::get('/gallery', 'BeritaController@gallery');

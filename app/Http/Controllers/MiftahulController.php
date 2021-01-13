@@ -10,31 +10,6 @@ class MiftahulController extends Controller
         return view ('layouts.home');
     }
 
-    public function sejarah(){
-        return view('profile.sejarah');
-    }
-
-    public function sambutan(){
-        return view('profile.sambutan');
-    }
-
-    public function visi(){
-        return view('profile.visi&misi');
-    }
-
-    public function guru(){
-        return view('profile.dataguru');
-    }
-
-    public function berita(){
-        return view('berita.beritatop');
-    }
-
-    public function info(){
-        return view('berita.infosekolah');
-    }
-
-    public function gallery(){
-        return view('berita.gallery');
-    }
+   
+    
 }
