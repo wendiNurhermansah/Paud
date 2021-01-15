@@ -127,7 +127,7 @@
       @foreach ( $berita as $i )
       <div class="item">
         <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
+          <img class="card-img-top" src="{{ config('app.sftp_src').'paud_storage/public/'. $i->gambar }}" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">{{ $i->judul }}</h5>
             <p class="card-text">{{ $i->isi_berita }}</p>
