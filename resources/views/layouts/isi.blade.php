@@ -101,8 +101,10 @@
                <label>PEREMPUAN</label>
             </div>
           </div>
-  
-          <button type="submit" class="btn btn-primary">Daftar</button>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Daftar</button>
+          </div>
         </form>
         
       </div>
@@ -122,47 +124,18 @@
 
   <div class="container">
     <div class="owl-carousel owl-theme">
+      @foreach ( $berita as $i )
       <div class="item">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">{{ $i->judul }}</h5>
+            <p class="card-text">{{ $i->isi_berita }}</p>
             <a href="#" class="btn btn-primary">Lihat Berita</a>
           </div>
         </div>
       </div>
-      <div class="item">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      
+      @endforeach
     </div>
   </div>
   
@@ -254,6 +227,9 @@
   <div class="asu">
     <h2>Prestasi Baru</h2>
   </div>
+  <div class="more-btn col-md-12 text-center">
+    <a href="{{ url('/prestasi') }}" class="btn btn-primary border btn-md">Tampilkan Semua Prestasi</a>
+  </div> 
 
   <div class="row perpect">
     <div class="col-md-6 bg-cover" style="background-image: url('img/gedung.jpg'); ">
@@ -283,7 +259,7 @@
     <h2>Profil Siswa</h2>
   </div>
   <div class="more-btn col-md-12 text-center">
-    <a href="" class="btn btn-primary border btn-md">Tampilkan Semua Siswa</a>
+    <a href="{{ url('/profilesiswa') }}" class="btn btn-primary border btn-md">Tampilkan Semua Siswa</a>
   </div> 
 
   <div class="owl-carousel owl-theme">
