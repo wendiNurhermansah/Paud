@@ -23,10 +23,24 @@ class MiftahulController extends Controller
 
    
     public function profile(){
-        return view('layouts.siswa');
+        $berita = Berita::all();
+        $daftar_siswa = Daftar_siswa::all();
+        $prestasi = Prestasi::all();
+        return view('layouts.siswa', compact(
+            'berita',
+            'daftar_siswa',
+            'prestasi'
+        ));
     }
 
     public function prestasi(){
-        return view('layouts.prestasi');
+        $berita = Berita::all();
+        $daftar_siswa = Daftar_siswa::all();
+        $prestasi = Prestasi::all();
+        return view('layouts.prestasi', compact(
+            'berita',
+            'daftar_siswa',
+            'prestasi'
+        ));
     }
 }

@@ -230,22 +230,22 @@
   <div class="more-btn col-md-12 text-center">
     <a href="{{ url('/prestasi') }}" class="btn btn-primary border btn-md">Tampilkan Semua Prestasi</a>
   </div> 
-
+  @foreach ($prestasi as $i)
   <div class="row perpect">
-    <div class="col-md-6 bg-cover" style="background-image: url('img/gedung.jpg'); ">
+    <div class="col-md-6 bg-cover" style="background-image: url('{{ config('app.sftp_src').'paud_storage/public/'. $i->gambar }}'); ">
     
     </div>
     <div class="col-md-6 info">
       <div class="card" style="width: 35rem; height: 19rem; box-shadow: 0px 0px 1px 1px">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">{{ $i->n_prestasi }}</h5>
+          <p class="card-text">{{ $i->isi_prestasi }}</p>
           
         </div>
       </div>
     </div>
   </div>
+  @endforeach
 </div>
 </div>
 
@@ -263,115 +263,17 @@
   </div> 
 
   <div class="owl-carousel owl-theme">
+    @foreach ( $daftar_siswa as $i )
     <div class="item">
       <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
+        <img class="card-img-top" src="{{ config('app.sftp_src').'paud_storage/public/'. $i->gambar }}" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h5 class="card-title">{{$i->nama_siswa}}</h5>
+          <a href="{{ url('/profilesiswa') }}" class="btn btn-success">Lihat semua</a>
         </div>
       </div>
     </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-    <div class="item">
-      <div class="card cardd" style="width: 18rem;">
-        <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-   
+   @endforeach
 </div>
   
 </div>
