@@ -14,6 +14,7 @@
 Route::get('/', 'MiftahulController@home');
 Route::get('/profilesiswa', 'MiftahulController@profile');
 Route::get('/prestasi', 'MiftahulController@prestasi');
+Route::post('/pendaftaran', 'MiftahulController@store')->name('pendaftaran.store');
 
 Route::get('/sejarah', 'ProfileController@sejarah');
 Route::get('/sambutan', 'ProfileController@sambutan');

@@ -21,14 +21,17 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-3">
-            <div class="card" style="width: 18rem;  margin-top: 50px; margin-bottom: 50px;">
-                <img class="card-img-top" src="img/gedung2.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <p class="card-text text-center">Lapang</p>
+      @foreach ($gallery as $i)
+        <div class="col-md-3" style="margin:20px;">
+            <div class="card" style="width: 18rem;  margin-top: 30px; margin-bottom: 30px;">
+                <img class="card-img-top" src="{{ config('app.sftp_src').'paud_storage/public/'. $i->gambar }}" alt="Card image cap">
+                <div class="card-body" style="background-color: cyan">
+                  <h5 class="card-text text-center">{{$i->n_gallery}}</h5>
                 </div>
-              </div>
+            </div>
         </div>
+       
+        @endforeach
     </div>
 </div>
 

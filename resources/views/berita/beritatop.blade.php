@@ -23,80 +23,26 @@
     <div class="row">
         <div class="col-md-8">
             <div class="row">
+                @foreach ($berita as $i)
                 <div class="col-md-4">
                     <div class="card" style="width: 13rem; padding: 20px;">
-                        <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ config('app.sftp_src').'paud_storage/public/'. $i->gambar }}" alt="Card image cap">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <h5 class="card-title">{{$i->judul}}</h5>
+                          <p class="card-text">{{$i->isi_berita}}</p>
                           <a href="#" class="btn btn-primary">Go somewhere</a>
                         </div>
                       </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 13rem; padding: 20px;">
-                        <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card" style="width: 13rem; padding: 20px;">
-                        <img class="card-img-top" src="{{asset('img/logo.jpg')}}" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <div class="col-md-4">
           <div class="col-md-4">
-            <div class="card" style="width: 25rem; margin-top: 50px;">
-                <div class="card-body">
-                  <h4>AGENDA</h4>
-                 <div class="row">
-                   <div class="col-md-2">
-                    <i class="fas fa-calendar-alt"></i>
-                   </div>
-                   <div class="col-md-10">
-                     <p>Lorem ipsum dolor sit amet.</p>
-                   </div>
-                 </div>
-                </div>
-              </div>
-              <div class="card" style="width: 25rem; margin-top: 50px;">
-                <div class="card-body">
-                  <h4>PENGUMUMAN</h4>
-                 <div class="row">
-                   <div class="col-md-2">
-                    <i class="fas fa-bullhorn"></i>
-                   </div>
-                   <div class="col-md-10">
-                     <p>Lorem ipsum dolor sit amet.</p>
-                   </div>
-                 </div>
-                </div>
-              </div>
-              <div class="card" style="width: 25rem; margin-top: 50px; margin-bottom: 30px;">
-                <div class="card-body">
-                  <h4>BERITA</h4>
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img class="card-img-top" src="{{asset('img/gedung1.jpg')}}" alt="Card image cap">
-                    </div>
-                    <div class="col-md-8">
-                      <p>Lorem ipsum dolor sit amet 
-                        lorem3</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+           @include('isi.agenda')
+           @include('isi.pengumuman')
+           @include('isi.berita')
+          </div>
         </div>
     </div>
 </div>
